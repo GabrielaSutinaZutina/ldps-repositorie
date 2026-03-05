@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabulas</title>
+    </head>
+    <body>
+        <ul>
+            <li><a href="../index.html">Sākums (HTML pamati)</a></li>
+        </ul>
+        <hr>
+
+<!--  tr>th*4{$.kolonna}  -->
+
+        <h3>Šūnu sapludināšana</h3>
+
+        <p>Tabulai var sapludināt šūnas. Tam izmanto <b>rowspan</b> un <b>colspan</b>, norādot ar skaitli, cik šūnas kolonnā un/vai rindā sapludina.</p>
+        <p>1. Lai neizkropļotu tabulu, kurā kādam &lt;th&gt; tika pilietots <i>colspan</i> ir jāizdzēš atbilstošs &lt;th&gt; vai &lt;td&gt;.</p>
+        <p>Skaitu nosaka pēc principa : <i>skaitlis <strong>colspan</strong></i> - 1,
+            <br>
+            Piemēram: ir šāds fragments - &lt;td colspan="2"&gt;.
+        </p>
+        <p>2. Lai neizkropļotu tabulu ir nepieciešams katrā rindā izdzēst &lt;th&gt;, kurā kādam tika pielietots <i>rowspan</i> &lt;th&gt; vai &lt;td&gt;.</p>
+        <p>Skaitu nosaka pēc principa <i>skaitlis <strong>rowspan</strong></i> - 1,
+        <br>
+        Piemēram : ir šāds fragments - &lt;td rowspan="4"&gt;.
+        </p>
+        <p>Šajā gadījumā ir jāizdzēš 4 - 1 = 3 rindas no konkrētās kolonnas, kurā ir &lt;td rowspan="4"&gt;</p>
+        <table border="black">
+            <thead>
+                <tr>
+                    <th>1.kolonna</th>
+                    <th>2.kolonna</th>
+                    <th>3.kolonna</th>
+                    <th>4.kolonna</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3">1. rinda 1.kolonna</td>
+                    <!-- <td>1. rinda 2.kolonna</td>
+                    <td>1. rinda 3.kolonna</td> -->
+                    <td>1. rinda 4.kolonna</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">2. rinda 1.kolonna</td>
+                    <td>2. rinda 2.kolonna</td>
+                    <td colspan="2" rowspan="3">2. rinda 3.kolonna</td>
+                    <!--<td>2. rinda 4.kolonna</td> -->
+                </tr>
+                <tr>
+                    <td>3. rinda 1.kolonna</td>
+                    <!-- <td>3. rinda 2.kolonna</td>
+                    <td>3. rinda 3.kolonna</td> -->
+                    <!-- <td>3. rinda 4.kolonna</td> -->
+                </tr>
+                <tr>
+                    <td>4. rinda 1.kolonna</td>
+                    <!-- <td>4. rinda 2.kolonna</td>
+                    <td>4. rinda 3.kolonna</td> -->
+                    <!-- <td>4. rinda 4.kolonna</td> -->
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3> 2 . piemērs</h3>
+
+        <table border="black">
+            <thead>
+                <tr>
+                    <th colspan="6">Time Table</th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="6"><b>Hours</b></td>
+                    <td><b>Mon</b></td>
+                    <td><b>Tue</b></td>
+                    <td><b>Wed</b></td>
+                    <td><b>Thu</b></td>
+                    <td><b>Fri</b></td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Arts</td>
+                </tr>
+
+                <tr>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td>Arts</td>
+                </tr>
+
+                <tr>
+                    <td colspan="5"><b>LAUNCH</b></td>
+                </tr>
+
+                <tr>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                    <td rowspan="2">Project</td>
+                </tr>
+
+                <tr>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Math</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>3. piemērs</h3>
+
+        <table border="">
+            <caption><b>Football Scores</b></caption>
+
+            <thead></thead>
+
+            <tbody>
+                <tr>
+                    <td colspan="5">Home Team&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td colspan="5">Away Team&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Arsenal</td>
+                    <td>2</td>
+                    <td colspan="4">Leeds</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">Derby</td>
+                    <td>1</td>
+                    <td colspan="4">Everton</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">Liverpool</td>
+                    <td>0</td>
+                    <td colspan="4">Sunderland</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">Newcastle</td>
+                    <td>1</td>
+                    <td colspan="4">Man Utd</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>4. piemērs</h3>
+
+        <table border="black">
+            <caption>lan's Timetable</caption>
+
+            <thead></thead>
+
+            <tbody>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="4"></td>
+                    <td colspan="3">Morning</td>
+                    <td colspan="2">lunch</td>
+                    <td colspan="6">afternoon</td>
+                    <td colspan="3">evening</td>
+                </tr>
+                <tr>
+                    <td colspan="3" rowspan="3"> </td>
+                    <td colspan="4" rowspan="3"> </td>
+
+                    <td rowspan="3" >9-10 am</td>
+                    <td rowspan="3" >10-11 am</td>
+                    <td rowspan="3" >11-12 am</td>
+
+                    <td rowspan="3" colspan="2">1-2 pm</td>
+
+                    <td rowspan="3">2-3 pm</td>
+                    <td rowspan="3">3-4 pm</td>
+                    <td rowspan="3">4-5 pm</td>
+                    <td rowspan="3" colspan="3">5-6 pm</td>
+
+                    <td rowspan="3">6-7 pm</td>
+                    <td rowspan="3">7-8 pm</td>
+                    <td rowspan="3">8-9 pm</td>
+                </tr>
+
+                <tr></tr>
+                <tr></tr>
+
+                <tr>
+                    <td colspan="3" rowspan="3">Work</td>
+                    <td colspan="4" rowspan="2">Monday</td>
+                    <td colspan="3" rowspan="2">Development Meeting</td>
+                    <td rowspan="2" colspan="2"></td>
+                    <td colspan="3" rowspan="2">Client Meeting</td>
+                    <td colspan="3" rowspan="2">commute</td>
+                    <td colspan="3" rowspan="2">Free</td>
+                </tr>
+
+                <tr></tr>
+
+                <tr>
+                    <td colspan="4">Tuesday</td>
+                    <td colspan="3">in Office</td>
+                    <td colspan="2"></td>
+                    <td colspan="9">in Office</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" rowspan="4">Lecture</td>
+                    <td colspan="4">Wednesday</td>
+                    <td colspan="3">CSC205</td>
+                    <td colspan="2"></td>
+                    <td colspan="9">preparation</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3" colspan="4">Thursday</td>
+                    <td rowspan="3" colspan="3">MAM200</td>
+                    <td colspan="2" rowspan="3"></td>
+                    <td colspan="3" rowspan="3">Tutorials for MAM200</td>
+                    <td colspan="6" rowspan="3">Free</td>
+                </tr>
+
+                <tr></tr>
+                <tr></tr>
+
+                <tr>
+                    <td colspan="3">Research</td>
+                    <td colspan="4">Friday</td>
+                    <td colspan="3">Research</td>
+                    <td colspan="2"></td>
+                    <td colspan="9">Research</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <hr>
+
+        <h3>5. piemērs</h3>
+
+        <h3>Basic HTML Table</h3>
+
+        <table border="black">
+
+            <thead>
+                <tr>
+                    <th colspan="2">Level 1</th>
+                    <th colspan="4">Level 2</th>
+                    <th colspan="3">Level 3</th>
+                    <th colspan="3">Info</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" rowspan="6">System</td>
+                    <td colspan="4" rowspan="4">System Apps</td>
+                    <td colspan="3" rowspan="3">SystemEnv</td>
+                    <td colspan="3">App Text</td>
+                    <td>foo</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">App Memory</td>
+                    <td>foo</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">App Test</td>
+                    <td>bar</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">SystemEnv2</td>
+                    <td colspan="3">App Test</td>
+                    <td>bar</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" rowspan="2">System Memory</td>
+                    <td colspan="3" rowspan="2">Memeory Test</td>
+                    <td colspan="3">Memory Func</td>
+                    <td>foo</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">Apes Test</td>
+                    <td>foo</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>6. piemērs</h3>
+
+        <table border style="border-collapse: collapse;">
+            <caption>Screening</caption>
+
+            <thead></thead>
+
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>14:00</td>
+                    <td>16:00</td>
+                    <td>18:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Blue hall</td>
+                    <td colspan="2">The Secret Life of Pets</td>
+                    <td>Jason Bourne</td>
+                    <td>Suicide Squad</td>
+                </tr>
+                <tr>
+                    <td>Red hall</td>
+                    <td>Jason Bourne</td>
+                    <td colspan="3">Suicide Squad</td>
+                </tr>
+                <tr>
+                    <td>Green hall</td>
+                    <td colspan="2">The Secret Life of Pets</td>
+                    <td colspan="2">Jason Bourne</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>7. piemērs</h3>
+
+        <table border="3px" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><b>0</b></td>
+                    <td rowspan="3">1</td>
+                    <td rowspan="2">2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td rowspan="2">3</td>
+                </tr>
+
+                <tr>
+                    <td><b>1</b></td>
+                    <td>3</td>
+                    <td rowspan="3">3</td>
+                </tr>
+
+                <tr>
+                    <td><b>2</b></td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td><b>3</b></td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Tabulas uzdevums</h3>
+
+        <table border="black">
+            <thead>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" rowspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td colspan="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td rowspan="2" colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>

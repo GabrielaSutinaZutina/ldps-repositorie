@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Piemēri par Formām</title>
+    </head>
+    <body>
+        <h1>Formas elementi</h1>
+
+        <ul>
+            <li><a href="../index.html">Sākums (HTML pamati)</a></li>
+        </ul>
+        <hr>
+        <p>HTML formas elementus raksta starp &lt;form&gt; tagu.</p>
+
+        <form>
+            <!-- Teksta ievadlauks (simbolu virkne)        required - obligats lauks-->
+            <div>
+                <label for="firstName">Vārds</label>
+                <input type="text" id="firstName" placeholder="Ievadi vārdu" name="vards" required/>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="pass">Parole</label>
+                <input type="password" id="pass" placeholder="Ievadi paroli" name="parole" required/>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">E-pasts</label>
+                <input type="email" id="email" placeholder="E-pasts" name="epasts" required/>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="phoneNumber">Tālrunis</label>
+                <select name="valstsRegionaKods">
+                    <option value="A">+371</option>
+                    <option value="B">+49</option>
+                    <option value="-">+370</option>
+                </select>
+                <input type="tel" id="phoneNumber" placeholder="xx xxx xxx" name="talrunis" required/>
+                
+            </div>
+
+            <br>
+
+            <div>
+                <label for="aboutMe">About me</label>
+                <textarea id="aboutMe" placeholder="..." cols="20" rows="5" name="aboutMe"></textarea>
+            </div>
+
+            <br>
+
+            <fieldset>
+                <label for="noORyes">Jā / Nē?</label>
+                <input type="checkbox" id="noORyes" group="checkboxOne" value="pirmaisCheckBox"/>
+                <br>
+                <label for="yesORyes">Nē / Jā?</label>
+                <input type="checkbox" id="yesORyes" group="checkboxTwo" value="otraisCheckBox"/>
+            </fieldset>
+
+            <br>
+
+            <!-- Vienā grupā var būt tikai 1 elements izvēlēts
+             -->
+            <fieldset>
+                <legend>Mājdzīvnieki</legend>
+                <p>Izvēlieties, kāds dzīvnieks jums pašreiz dzīvo mājās.</p>
+                <input type="radio" id="cat" name="pet" value="kaķis" required/>
+                <label for="cat">Kaķis</label>
+                <br>
+                <input type="radio" id="orangutan" name="pet" value="orangutans" required/>
+                <label for="orangutan">Orangutans</label>
+                <br>
+                <input type="radio" id="whale" name="pet" value="valis" required/>
+                <label for="whale">Valis</label>
+            </fieldset>
+
+            <div>
+                <label for="parvietosanasVeids">Transportlīdzeklis:</label>
+                <select id="parvietosanasVeids" name="parvietosanasVeids">
+                    <option value="default" selected disabled>--- Izvēlies pārvietošanās veidu ---</option>
+                    <option value="automasina">automašīna</option>
+                    <option value="velosipeds">velosipēds</option>
+                    <option value="jahta">jahta</option>
+                    <option value="kajas">kājas</option>
+                    <option value="autobuss">autobuss</option>
+                    <option value="buss">Buss</option>
+                    <option value="gaisaBalons">Gaisa balons</option>
+                    <option value="teleports">Teleports</option>
+                </select>
+            </div>
+
+            <button type="submit">Nospied te!!!</button>
+            <button type="reset">Clear</button>
+            <input type="button" value="poga"/>
+
+            <br>
+            <br>
+            <label for="att">File Type</label>
+            <input type="file" id="att"/>
+
+
+        </form>
+    </body>
+</html>

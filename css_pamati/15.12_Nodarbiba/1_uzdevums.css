@@ -1,0 +1,411 @@
+/*Kopejais Grids*/
+
+/*Es paņēmu 12 kolonnas un 11 rindas*/
+
+.container{
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+
+    border: solid 1px black;
+}
+
+.pirma_rinda{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+/*Es nezinu vai ta isti var, bet es izveidoju velvienu grid ieksa*/
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.yellow{
+    background-color: rgb(225, 215, 0);
+}
+
+#pirmais{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.pirmais_span{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 4;
+    grid-column-end: 10;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.green{
+    background-color: rgb(144, 238, 144);
+}
+
+#pirma_rinda_2_bloks_augsa{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+#pirma_rinda_2_bloks_apaksa{
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.blue{
+    background-color: rgb(135, 206, 235);
+}
+
+#pirma_rinda_3_bloks{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 10;
+    grid-column-end: 13;
+}
+
+/*----------------------------------------------------------------------*/
+
+.otra_rinda{
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.red{
+    background-color: rgb(255, 160, 122);
+}
+
+#otrais{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.otrais_span{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 5;
+    grid-column-end: 9;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#otra_rinda_2_bloks_augsa{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#otra_rinda_2_bloks_apaksa{
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#otra_rinda_3_bloks{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
+
+/*--------------------------------------------------------------------------*/
+
+.tresa_rinda{
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+    grid-column-start: 4;
+    grid-column-end: 10;
+}
+
+#offsets_tris{
+    margin: 0;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.ceturta_rinda{
+    grid-row-start: 6;
+    grid-row-end: 8;
+
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#ceturtais{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.cet_span{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 3;
+    grid-column-end: 7;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#cet_rinda_2_bloks_augsa{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#cet_rinda_2_bloks_apaksa{
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#cet_tresais_bloks{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 7;
+    grid-column-end: 10;
+}
+
+#cet_ceturtais_bloks{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 10;
+    grid-column-end: 13;
+}
+
+/*---------------------------------------------------------------*/
+
+.piekta_rinda{
+    grid-row-start: 8;
+    grid-row-end: 9;
+
+    grid-column-start: 7;
+    grid-column-end: 13;
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+#col_1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#col_2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+
+#col_3{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
+
+/*------------------------------------------*/
+
+.sesta_rinda{
+    grid-row-start: 9;
+    grid-row-end: 10;
+
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+#order_1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#order_2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+#order_3{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 7;
+    grid-column-end: 10;
+}
+
+#order_4{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 10;
+    grid-column-end: 13;
+}
+
+/*---------------------------------------------------------*/
+
+.sept_rinda{
+    grid-row-start: 10;
+    grid-row-end: 11;
+
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+#ord_1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#ord_2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+#ord_3{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 7;
+    grid-column-end: 10;
+}
+
+#ord_4{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 10;
+    grid-column-end: 13;
+}
+/*---------------------------------------------------------*/
+
+.ast_rinda{
+    grid-row-start: 11;
+    grid-row-end: 12;
+
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+    display: grid;
+    
+    gap: 10 0px;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+#o_1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#o_2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+#o_3{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 7;
+    grid-column-end: 10;
+}
+
+#o_4{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 10;
+    grid-column-end: 13;
+}

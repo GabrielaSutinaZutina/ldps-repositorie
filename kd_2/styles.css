@@ -1,0 +1,37 @@
+table, th, td{
+    border: 1px solid #000000;
+    border-collapse: collapse; /* sapludina bordera dubulto liniju uz 1 */
+    margin: auto;
+}
+
+.datu_bazes_sab{
+    background-color: #9aebff;
+}
+
+.sports_mat{
+    background-color: #ffb4cd;
+}
+
+.fiz_prog_tehn{
+    background-color: #1eb81e;
+}
+
+.svesv{
+    background-color: rgb(157, 241, 157);
+}
+
+.web_prog{
+    background-color: rgb(255, 204, 94);
+}
+
+.num_day{
+    font-size: 30px;
+    padding: 30px;
+}
+
+td{
+    font-size: 15px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}

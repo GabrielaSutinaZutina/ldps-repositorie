@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <!-- Tiek aprakstītas lapas konfigurācijas, piemēram, saites ar citiem failiem,
+        charsets (simbolu atpazīšanai), pārlūku tabu (cilņu) virsraksti, utt... -->
+
+        <!--
+        Uzliek pārlūkam kā pienākumu atspoguļot simbolus no UTF-8 simbolu kopas
+        (atpazīt latviešu burtus)
+        -->
+        <meta charset="UTF-8">
+
+        <!--
+        Tīmekļa vietnes lappuses cilnes (tab) nosaukums/virsraksts
+        -->
+        <title>HTML ievads</title>
+    </head>
+    <body>
+        <!-- Tiek apskatīts lapas saturs (to, ko redzēs pats lietotājs) -->
+
+        <h1>Pirmā tīmekļa lapa</h1> <!-- Pirmā līmeņa virsraksta teksts (birka) -->
+
+        <hr>
+
+        <ul>
+            <li><a href="saraksti/saraksti.html">Piemēri par sarakstiem</a></li>
+            <li><a href="tabulas/tabulas.html">Piemēri par tabulām</a></li>
+            <li><a href="formas/formas.html">Piemēri par formām</a></li>
+        </ul>
+
+        <hr> <!-- Hoeizontāla līnija -->
+        <h2>* Virsraksta birkas (tagi) </h2>
+
+        <p>&lt;h1&gt; - &lt;h6&gt;
+            ir virsrakstu tagi, jeb birkas, kas tiek izmantots, lai izceltu virsrakstu mājaslapas saturā.
+        </p>
+
+        <p>Pamatā tiek izmantoti virsrakstu līmeņi no &lt;h1&gt; - &lt;h3&gt;</p>
+
+        <p>Piemēri :</p>
+
+        <h1>1.līmeņa virsraksts</h1>
+        <h2>2.līmeņa virsraksts</h2>
+        <h3>3.līmeņa virsraksts</h3>
+
+        <hr>
+
+        <h2>* Saraksti</h2>
+
+        <p>Pastāv 2 sarakstu veidi : sakārtoti (OL), nesakārtoti (UL)</p>
+        <p>Sakārtoti saraksti kā aizzīmi izmanto numerāciju (ar skaitļiem vai burtiem)</p>
+        <p>Nesakārtoti saraksti kā aizzīmi izmanto figūras vai simbolus (kvadrāts, aplis, uc.)</p>
+        <p>Saraksta elementi tiek uzskaitīti ar &lt;lt&gt; birku palīdzību, tos liekot starp tā saraksta atverošo un aizverošo tagu.</p>
+        
+        <p>Sakārtota saraksta piemērs :</p>
+
+        <ol>
+            <li>Saule</li>
+            <li>Mēness</li>
+            <li>Mākonis</li>
+        </ol>
+
+        <p>Nesakārtota saraksta piemērs :</p>
+
+        <ul>
+            <li>Saule</li>
+            <li>Mēness</li>
+            <li>Mākonis</li>
+        </ul>
+
+        <hr>
+
+        <h2>* Vārda vai frāžu izcelšana</h2>
+
+        <p>Jebkurā tīmekļa vietnē dotos teksta fragmentus mēs varam izcelt treknrakstā vai slīprakstā</p>
+
+        <ul>
+            <li>treknraksts - liek &lt;strong&gt; pirms pirmā izceļamā vārda un &lt;/strong&gt; pēc pēdējā izceļamā vārda</li>
+            <p>Piemērs : Šodien tika pieminētas <strong>Front-end</strong> valodas un pārlūki</p>
+            
+            <li>Slīpraksts - liek &lt;i&gt; pirms pirmā izceļamā vārda un &lt;/i&gt; pēc pēdējā izceļamā vārda</li>
+            <p>Piemērs : Šodien tika pieminētas <i>Front-end</i> valodas un pārlūki</p>
+        </ul>
+
+        <hr>
+
+        <h2>* Tabulas</h2>
+
+        <p>Lai izveidotu tabulu, nepieciešams izmantot &lt;table&gt; tagu. Starp tabulas atverošo un aizverošo tagu mēs liekam tagu &lt;tr&gt; (tabulas rinda).</p> 
+        <p>&lt;tr&gt; tabulā izveido tukšu tabulas rindu. Lai rindu aizpildītu ar kolonnām, izmanto &lt;td&gt; tagu</p>
+        <p>Pirmajai tabulas rindai var izmantot arī &lt;th&gt;, jeb table head. &lt;th&gt;tags ir tabulas virsrakstu tags</p>
+        <p>Piemērs :</p>
+
+        <table border="1px solid black">
+            <tr>
+                <th>1.kolonna</th>
+                <th>2.kolonna</th>
+                <th>3.kolonna</th>
+                <th>4.kolonna</th>
+            </tr>
+            <tr>
+                <td>2.rinda 1.kolonna</td>
+                <td>2.rinda 2.kolonna</td>
+                <td>2.rinda 3.kolonna</td>
+                <td>2.rinda 4.kolonna</td>
+            </tr>
+            <tr>
+                <td>3.rinda 1.kolonna</td>
+                <td>3.rinda 2.kolonna</td>
+                <td>3.rinda 3.kolonna</td>
+                <td>3.rinda 4.kolonna</td>
+            </tr>
+            <tr>
+                <td>4.rinda 1.kolonna</td>
+                <td>4.rinda 2.kolonna</td>
+                <td>4.rinda 3.kolonna</td>
+                <td>4.rinda 4.kolonna</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>* Hipersaites</h2>
+
+        <p>Lai tīmekļa vietnē izmantotu hipersaites nepieciešams izmantot &lt;a&gt; tagu. Starp &lt;a&gt; un &lt;/a&gt; atrodas teksts vai komponente, kam tiks piešķirta hipersaite.</p>
+        <p>Lai norādītu saites (URL) ceļu, uz kuru pāradresēt, &lt;a&gt; nepieciešams izveidot <i>href=</i> atribūtu, pēdiņās norādot ceļu.</p>
+        <p>Ar atribūta <i>target=</i> palīdzību var norādīt, kur hipersaites saturam atvērties, esošajā cilnē(tab) vai citā cilnē(tab)</p>
+        <p>Piemērs : <a href="https://jekabpils.jak.lv/" target="_blank"> Jēkabpils Tehnoloģiju tehnikums</a></p>
+    
+        <hr>
+
+        <h2>* Attēli</h2>
+
+        <p>Lai tīmekļa vietnē izmantotu attēlu, nepieciešams izmantot &lt;img /&gt;.img tags ir īsais, tāpēc img taga beigās lieto / -> &lt;img /&gt;.</p>
+        <p>Lai norādītu kāds attēls tiks izmantots, mēs lietojam atribūtu : src="..."</p>
+        <p>Papildus tam mums ir jānorāda vēl viens atribūts, kuram jānostrādā brīdī, kad mums nav atrasts šis attēls</p>
+        
+        <img src="https://www.nwf.org/-/media/NEW-WEBSITE/Shared-Folder/Wildlife/Mammals/mammal_mule-deer-California_Richard-Douse_600x300.jpg" alt="deer photo"/>
+        <br>
+        <img src="navAttela" alt="Nav attela"/>
+
+        <hr>
+
+        <h2>* Formas</h2>
+
+        <p></p>
+
+    </body>
+</html>

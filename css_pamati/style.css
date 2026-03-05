@@ -1,0 +1,79 @@
+/*
+CSS SELECTION pieraksti
+1. ID -> HTML elementa atribūtu ID pieraksta šādi
+#(id_vērtība) {... css}
+
+
+2. class -> HTML elementa atribūts CLASS pieraksta šādi:
+        (class_vertiba) {...css}
+
+*/
+
+body {
+    background-color: rgb(238, 227, 185);
+}
+
+#title{
+    /*
+        color - izmaina TIKAI teksta krāsu
+
+        krāsas var pierakstīt vairākos veidos: 
+        1. HEX -> #FFFFFF -> pēc # simbola pirmās divas vērtības apraksta sarkano krāsu;
+                        -> tālāk nākamās divas vērtības apraksta zaļo krāsu;
+                        -> pēdējās divas divas vērtības apraksta zilo krāsu;
+
+
+        piemērs:
+             -  tikai zaļā -> #00FF00
+             -  tikai sarkanā -> #FF0000
+             -  tikai zilā -> #0000FF
+    */
+    color: blueviolet;
+    text-align:center;
+    /*
+    border - pievieno rāmi apkārt konkrētajam elementam
+    CSS stils border sastāv no 3 daļām
+    1. rāmja izmērs (treknums, 1px, 3px utml) 
+    2. rāmja stils:
+    (raustītas līnijas - "dashed", punktotas līnijas "dotted" un vienkāršas līnijas "solid")
+    3. rāmja krāsa - 
+    border: {1.} {2.} {3.}
+    */
+
+    border:3px dotted #000000;
+
+
+};
+
+.images {
+    width: 100px;
+    height: 100px;
+    
+    background-color: #FF0000;   
+    padding: 5px 5px 5px 5px;
+
+    border: 1px solid #0f0;
+
+    /* object-fit ļauj pielāgot dažādus satura elementus (img, video)*/
+    object-fit: fill;
+        
+}
+
+#imageContainer {
+/*
+        ATSTARPES:
+
+            1.padding {top} {right} {bottom} {left}
+                -padding veido iekšējo atstarpi starp galveno elementu (konteineris) un iekšējiem elementiem
+
+                !!! ja lietotājs ārējo atstarpi pieraksta šādi: padding: {vertiba}, tad šī vērtība tiek pielietota VISĀM MALĀM
+                !!! ja lietotājs ārējo atstarpi pieraksta šādi: padding: {x_ass} {y_ass}, tad x ass vērtība  tiek pielietota AUGŠAI un APAKŠAI, savukārt, y ass vērtība tiek pielietota PA LABI un PA KREISI
+    
+                !!! ja lietotājs ārējo atstarpi pieraksta šādi: padding: {top} {right} {bottom} {left}, tad šīs norādītās vērtības tiek pielietota VISĀM MALĀM, balstoties uz konkrētā parametra pozīciju
+    
+                */
+
+    padding: 20px;
+    border: 1px solid #000000;
+
+}

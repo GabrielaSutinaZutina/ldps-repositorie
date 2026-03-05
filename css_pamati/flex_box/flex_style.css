@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    /*
+    Justifed-contents pielīdzina visus elementus x asij
+
+    flex-end - pielīdzina visus elementus pie labās malas
+    */
+    justify-content: flex-end;
+
+}
+.container-2{
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.container-3{
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+.container-4{
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+.container-5{
+    display: flex;
+
+    justify-content: space-evenly;
+
+}
+
+.item{
+    border: 1px solid #000000;
+    padding: 2px;
+    margin: 0 5px 0 5px;
+
+}

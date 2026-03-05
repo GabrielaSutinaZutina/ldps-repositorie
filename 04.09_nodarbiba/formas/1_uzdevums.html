@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>formas uzdevumi</title>
+    </head>
+    <body>
+    
+        <h1>Registration Form</h1>
+
+        <form>
+
+        <div>
+            <label for="name">Full Name:</label>
+            <br>
+            <input type="text" id="name"/>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email Address:</label>
+            <br>
+            <input type="email" id="email"/>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id="password"/>
+        </div>
+        <br>
+        <div>
+            <label for="date">Date of Birth:</label>
+            <br>
+            <input type="date" id="date"/>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>Gender</legend>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required/>
+                    <label for="male">Male</label>
+                </div>
+                
+                <input type="radio" id="female" name="gender" value="female" required/>
+                <label for="female">Female</label>
+                <br>
+                <input type="radio" id="other" name="gender" value="other" required/>
+                <label for="other">Other</label>
+            </fieldset>
+        </div>
+
+        <br>
+        <div>
+            <fieldset>
+                <legend>Interests</legend>
+                <div>
+                    <input type="checkbox" id="sports" name="interests" value="sports"/>
+                    <label for="sports">Sports</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="music" name="interests" value="music"/>
+                    <label for="music">Music</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="travel" name="interests" value="travel"/>
+                    <label for="travel">Travel</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="reading" name="interests" value="reading"/>
+                    <label for="reading">Reading</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="country">Country:</label>
+            <br>
+            <select id="country" name="country">
+                <option value="default" selected disabled>Select a country</option>
+                <option value="latvia">Latvia</option>
+                <option value="lithuania">Lithuania</option>
+                <option value="estonia">Estonia</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="comments">Additional Comments:</label>
+            <br>
+            <textarea id="comments" cols="50" rows="4"></textarea>
+        </div>
+
+        <br>
+
+        <button>Register</button>
+        <button>Clear</button>
+
+        </form>
+
+            <hr>
+
+        <h2>Pizza Order Form</h2>
+
+        <form>
+            
+            <h3>Customer Information</h3>
+
+            <div>
+                <label form="name">Name:</label>
+                <br>
+                <input id="name" type="text"/>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <br>
+                <input type="email" id="email"/>
+            </div>
+            <br>
+            <div>
+                <label for="phoneNumber">Phone Number:</label>
+                <br>
+                <input type="tel" id="phoneNumber"/>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="address">Delivery Address:</label>
+                <br>
+                <textarea id="address" cols="35" rows="1"></textarea>
+            </div>
+
+            <br>
+
+            <h3>Select Your Pizza</h3>
+
+            <div>
+                <label for="pizza_size">Pizza Size:</label>
+                <br>
+                <select id="pizza_size" name="size">
+                    <option value="default" selected disabled>Choose size</option>
+                    <option value="25cm">25cm</option>
+                    <option value="30cm">30cm</option>
+                    <option value="50cm">50cm</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <fieldset>
+                    <legend>Toppings</legend>
+
+                    <div>
+                    <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni"/>
+                    <label for="pepperoni">Pepperoni</label>
+                    </div>
+
+                    <div>
+                    <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms"/>
+                    <label for="mushrooms">Mushrooms</label>
+                    </div>
+
+                    <div>
+                    <input type="checkbox" id="onions" name="toppings" value="onions"/>
+                    <label for="onions">Onions</label>
+                    </div>
+
+                    <div>
+                    <input type="checkbox" id="sausage" name="toppings" value="sausage"/>
+                    <label for="sausage">Sausage</label>
+                    </div>
+
+                    <div>
+                    <input type="checkbox" id="bacon" name="toppings" value="bacon"/>
+                    <label for="bacon">Bacon</label>
+                    </div>
+
+                    <div>
+                    <input type="checkbox" id="cheese" name="toppings" value="cheese"/>
+                    <label for="cheese">Extra Cheese</label>
+                    </div>
+                    
+                    <div>
+                    <input type="checkbox" id="olives" name="toppings" value="olives"/>
+                    <label for="olives">Black Olives</label>
+                    </div>
+                    
+                    <div>
+                    <input type="checkbox" id="peppers" name="toppings" value="peppers"/>
+                    <label for="peppers">Green Peppers</label>
+                    </div>
+                    
+                    <div>
+                    <input type="checkbox" id="pineapple" name="toppings" value="pineapple"/>
+                    <label for="pineapple">Pineapple</label>
+                    </div>
+                    
+                    <div>
+                    <input type="checkbox" id="spinach" name="toppings" value="spinach"/>
+                    <label for="spinach">Spinach</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <br>
+
+            <h3>Additional Choises</h3>
+
+            <div>
+                <label for="drinks">Drink:</label>
+                <br>
+                <select id="drinks" name="drink">
+                    <option value="default" selected disabled>Choose a drink (optional)</option></option>
+                    <option value="cola">cola</option>
+                    <option value="pepsi">pepsi</option>
+                    <option value="multifruit_juice">multifruit juice</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="side">Side:</label>
+                <br>
+                <select id="side" name="side">
+                    <option value="default" selected disabled>Choose a side (optional)</option></option>
+                    <option value="fries">fries</option>
+                    <option value="onion_rings">onion rings</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="instructions">Special Instructions:</label>
+                <br>
+                <textarea id="instructions" cols="50" rows="4"></textarea>
+            </div>
+
+            <br>
+
+            <button type="submit">Place Order</button>
+            <button type="reset">Clear</button>
+        </form>
+
+        <hr>
+
+        <form>
+
+            <div>
+                <label for="name">Enter your name: </label>
+                <input id="name" type="text"/>
+            </div>
+
+            <div>
+                <label for="email">Enter your email: </label>
+                <input id="email" type="email"/>
+            </div>
+
+            <div>
+                <label for="password">Enter your password: </label>
+                <input id="password" type="password"/>
+            </div>
+
+            <div>
+                <span>Choose your favourite fruit(s): </span>
+                <input id="fruit" type="checkbox" name="fruit" value="banana"/>
+                <label for="fruit">Banana</label>
+            </div>
+
+            <div>
+                <label for="cool">Are you cool? </label>
+                <input value="no" type="radio" name="cool" id="no"/>
+                <label for="no"></label>
+                <input value="yes" type="radio" name="cool" id="yes"/>
+                <label for="yes"></label>
+            </div>
+
+            <div>
+                <label for="planet">What is your favorite planet?</label>
+                <select id="planet" name="planet">
+                    <option value="default" selected disabled>--Please choose an option--</option>
+                    <option value="merkurijs">Merkurijs</option>
+                    <option value="venera">Venera</option>
+                    <option value="zeme">Zeme</option>
+                    <option value="mars">Marss</option>
+                    <option value="jupiters">Jupiters</option>
+                    <option value="saturns">Saturns</option>
+                    <option value="urans">Urans</option>
+                    <option value="neptuns">Neptuns</option>
+                    <option value="plutons">Plutons</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="about_you">Tell us a little about yourself:</label>
+                <br>
+                <textarea id="about_you" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit">SUBMIT</button>
+            <button type="button">GO!</button>
+
+        </form>
+
+        <hr>
+
+        <form>
+            <h3>Zoo Keeper Application Form</h3>
+            <p><i>Please complete the form. Mandatory fields are marked with a *</i></p>
+
+            <fieldset>
+                <legend>CONTACT DETAILS</legend>
+                <div>
+                <label for="name">Name *</label>
+                <input id="name" type="text" required/>
+                </div>
+
+                <br>
+
+                <div>
+                <label for="tel">Telephone</label>
+                <input id="tel" type="tel"/>
+                </div>
+
+                <br>
+
+                <div>
+                <label for="email">Email <b>*</b></label>
+                <input id="email" type="email" required/>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <div>
+                <fieldset>
+                    <legend>PERSONAL INFORMATION</legend>
+
+                    <div>
+                        <label for="age">* Age</label>
+                        <input id="age" type="number" min="0" required/>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="default" selected disabled>Choose your gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="firstOccurrenceAsZooKeeper">When did you first know you wanted to be a zoo-keeper?</label>
+                        <textarea id="firstOccurrenceAsZooKeeper" cols="30" rows="5"></textarea>
+                    </div>
+                </fieldset>
+            </div>
+
+            <br>
+
+            <div>
+                <fieldset>
+                    <legend>PICK YOU FAVORITE ANIMALS</legend>
+
+                    <div>
+                        <input type="checkbox" id="zebra" name="animals"/>
+                        <label for="zebra">Zebra</label>
+
+                        <input type="checkbox" id="cat" name="animals"/>
+                        <label for="cat">Cat</label>
+
+                        <input type="checkbox" id="anaconda" name="animals"/>
+                        <label for="anaconda">Anaconda</label>
+
+                        <input type="checkbox" id="human" name="animals"/>
+                        <label for="human">Human</label>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <input type="checkbox" id="elephant" name="animals"/>
+                        <label for="elephant">Elephant</label>
+
+                        <input type="checkbox" id="wildebeest" name="animals"/>
+                        <label for="wildebeest">Wildebeest</label>
+
+                        <input type="checkbox" id="pigeon" name="animals"/>
+                        <label for="pigeon">Pigeon</label>
+
+                        <input type="checkbox" id="crab" name="animals"/>
+                        <label for="crab">Crab</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <br>
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+
+    </body>
+</html>

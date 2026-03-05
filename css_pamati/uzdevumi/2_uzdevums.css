@@ -1,0 +1,27 @@
+#container{
+    background-color: #ffffe0;
+    border: 2px solid #b43333;
+    width: 400px;
+    padding: 8px;
+}
+
+#image{
+    border-top: 7px solid #9f6e32;
+    border-left: 7px solid #9f6e32;
+    border-bottom: 7px solid #ffaf4e;
+    border-right: 7px solid #ffaf4e;
+
+    width: 300px;
+    height: 100px;
+}
+
+#description{
+    border: 7px dashed #ffaf4e;
+    width: 300px;
+    height: 200px;
+    background-color: #ffff00;
+    /* ja saturs, kas atrodas iekšā šajā div elementā un div elementam ir fiksēts augstums,
+    tad 'overflow-y : auto;' pievienos rullīti izmainot šī div elementa saturu tā, lai 
+    teksts neaizplūstu ārpus šī div elementa robežām */
+    overflow-y: scroll;
+}

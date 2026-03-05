@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML forma 5.uzd</title>
+    </head>
+    <body>
+        <h1>My programming knowledge form</h1>
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                <div>
+                    <label form="first_name">First Name:</label>
+                    <input id="first_name" type="text"/>
+                </div>
+                <div>
+                    <label form="last_name">Last Name:</label>
+                    <input id="last_name" type="text"/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Course Info</legend>
+
+                <span>Course:</span>
+
+                <div>
+                <input id="web_design" name="course" type="radio"/>
+                <label for="web_design">Web Design</label>
+                </div>
+
+                <div>
+                <input id="sql" name="course" type="radio"/>
+                <label for="sql">SQL</label>
+                </div>
+
+                <div>
+                <input id="programming" name="course" type="radio"/>
+                <label for="programming">Programming</label>
+                </div>
+
+                <br>
+
+                <label for="career_goal">Career Goal</label>
+                <div>
+                <select id="career_goal" name="career">
+                    <option value="default" selected disabled>Choose your goal</option>
+                    <option value="web_des" >Web Designer</option>
+                    <option value="sb_admin" >Database administration</option>
+                    <option value="programmer" >Programmer</option>
+                    <option value="other" >Other</option>
+                </select>
+                </div>
+
+                <br>
+
+                <span>Skills (chesk all that apply):</span>
+
+                <br>
+
+                <div>
+                    <input type="checkbox" id="unix"/>
+                    <label for="unix">UNIX</label>
+
+                    <input type="checkbox" id="vim"/>
+                    <label for="vim">vim</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="html"/>
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css"/>
+                    <label for="css">CSS</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="phyton"/>
+                    <label for="phyton">Phyton</label>
+
+                    <input type="checkbox" id="js"/>
+                    <label for="js">JavaScript</label>
+                </div>
+
+                <br>
+
+                <label for="describe">Describe any additional skills you have:</label>
+                <br>
+                <textarea id="describe" cols="70" rows="5"></textarea>
+            </fieldset>
+
+            <button>Enter my information</button>
+        </form>
+    </body>
+</html>

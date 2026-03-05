@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+*{
+      font-family: "Sour Gummy", sans-serif; /*pieskir citu sriftu no google fonts*/
+}
+
+body{
+    background-color: #eb86d1;
+}
+
+#title{
+    color: #ffffff;
+    font-size: 35px;
+    border: 5px dashed #ff0000;
+    background-color: #4aff4a;
+    text-align: center;
+    padding: 25px;
+}
+
+#p{
+    text-align: center;
+    border: 3px solid #bd1616;
+    background-color: #f86767;
+    color: #ffffff;
+    padding: 10px;
+    margin-left: 950px;
+    margin-right: 950px;
+}
+
+table, th, td{
+    border: 3px solid #794434;
+    border-collapse: collapse; /* sapludina bordera dubulto liniju uz 1 */
+}
+
+table{
+    margin: auto;
+    table-layout: fixed;
+    size: 100px;
+}
+
+.name{
+    font-size: 15px; /* teksta izmers */
+    font-weight: 800; /* Treknraksts */
+    color: #bd1616;
+    padding: 10px;
+    text-align: left;
+}
+
+.apraksts{
+    color: #165214;
+    padding: 10px;
+}
+
+.cost{
+    color: #165214;
+    font-weight: 800; /* Treknraksts */
+    text-align: right;
+    padding: 10px;
+}
+
+tr{
+    background-color: #ffffac;
+}
+
+#zupas{
+    background-color: #ad624b;
+    color: #ffff00;
+    padding: 20px;
+    font-size: 25px;
+}
+
+b{
+    color: red;
+}
+
+#pamat_ed{
+    background-color:#746966;
+    color: #ffff00;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+#deserti{
+    background-color:#b15dff;
+    color: #ffff00;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+#dzerieni{
+    background-color:#505e50;
+    color: #ffff00;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
